@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/base.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -20,10 +20,16 @@
 <div class ="first-flex">
   <div class="inner-first-flex">
     <img src="images/image-tanya.jpg" id="imagess" alt="tanya">
-    <div class="btngroup" role="group" aria-label="Basic example">
-      <button type="button" id="prev" class="btn btn-secondary" role="button"><img src ="images/icon-prev.svg" alt="previous button"></button>
-      <button type="button" id="next"  class="btn btn-secondary" role="button"><img src ="images/icon-next.svg" alt="previous button"></button>  
+    <!-- btn group -->
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <button type="radio" name="options" id="option1" autocomplete="off" checked><img src ="images/icon-prev.svg" id="prev" alt="previous button"></button>
+      </label>
+      <label class="btn btn-secondary">
+        <button type="radio" name="options" id="option2" autocomplete="off"><img src ="images/icon-next.svg" id="next" alt="previous button"></button>
+      </label>
     </div>
+    <!-- end group -->
   </div>
   <br>
   <div class="inner-second-flex">
@@ -53,8 +59,17 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="mailto:iyayiemmanuel1@gmail.com">E-wave</a>.
   </div>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
+
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <button type="radio" name="options" id="option1" autocomplete="off" checked><img src ="images/icon-prev.svg" alt="previous button"></button>
+  </label>
+  <label class="btn btn-secondary">
+    <button type="radio" name="options" id="option2" autocomplete="off"><img src ="images/icon-next.svg" alt="previous button"></button>
+  </label>
+</div>
