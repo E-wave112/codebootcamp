@@ -1,0 +1,103 @@
+/* css styles */
+
+*,::before,::after{
+    box-sizing:border-box;
+
+}
+
+html {
+
+    scroll-behavior:smooth;
+}
+
+body{
+    font-size:24px;
+}
+.testimonial-center {
+    width:76%;
+    margin:auto;
+}
+img{
+    position:relative;;
+    /* width:80%;
+    height:80%; */
+    margin:auto;
+}
+.inner-second-flex{
+
+    background-image:url(/home/e-wave/Documents/undonefmetor/coding-bootcamp/coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg);
+    background-repeat:no-repeat;
+    color:hsl(240, 38%, 20%);
+    background-position:top center;
+}
+#bolden{
+    font-weight:700;
+}
+
+#prof {
+   color: hsl(240, 18%, 77%);
+}
+
+.inner-first-flex{
+
+    background-image:url(/home/e-wave/Documents/undonefmetor/coding-bootcamp/coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg),url(/home/e-wave/Documents/undonefmetor/coding-bootcamp/coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
+    /* background-repeat:no-repeat; */
+    /* background-size:contain; */
+
+
+} 
+#review {
+
+    width:80%;
+    margin-top:5%;
+    line-height:150%;
+}
+/* initiate the button transform class */
+.btn {
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.btn-group{
+    transform:translate(15%,-70%);
+}
+
+
+@media screen and (min-width:300px){
+    .first-flex{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+    .name-flex{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+}
+
+@media screen and (min-width:950px){
+    .first-flex{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:space-evenly;
+
+    }
+
+    .name-flex{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}
